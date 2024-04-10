@@ -58,7 +58,7 @@ function makeSuccessfulBuy(categoryId, productId) {
   );
   buyInfo.setAttribute("id", "buy-info");
   buyInfo.innerHTML = `
-  <h1 style="text-align: center; color: white">Спасибо за покупку <br>${selectedProduct.name}</h1>
+  <h1 style="text-align: center; color: white">Thank you for buying <br>${selectedProduct.name}</h1>
   `;
   document.body.appendChild(buyInfo);
   products.innerHTML = "";
