@@ -1,19 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Shop</title>
+  <meta charset="UTF-8">
+  <title>Shop</title>
+
+
+
+  <link rel="stylesheet" href="./style/style.css">
+
+
 </head>
+
 <body>
-    <div id="wrapper">
-        <div id="categories"></div>
-        <div id="products"></div>
-        <div id="product"></div>
-    </div>
+
+  <body>
+    <form name="mainForm" action="./pages/userInfo.html">
+      <input checked="" id="signin" name="action" type="radio" value="signin">
+      <label for="signin">Sign in</label>
+      <input id="signup" name="action" type="radio" value="signup">
+      <label for="signup">Sign up</label>
+      <input id="reset" name="action" type="radio" value="reset">
+      <label for="reset">Reset</label>
+      <div id="wrapper">
+        <div id="arrow"></div>
+        <input name="email" placeholder="Email" type="text">
+        <input name="password" placeholder="Password" type="password">
+        <div id="userName">
+          <input name="firstName" placeholder="First Name" type="text">
+          <input name="lastName" placeholder="Last Name" type="text">
+        </div>
+        <p><input type="date" name="dateOfBirth"></p>
+        <div id="gender">
+          <p>Male<input name="gender" type="radio" value="M"></p>
+          <p>Female<input name="gender" type="radio" value="F"></p>
+        </div>
+        <select name="city">
+          <option value="0">--select city--</option>
+          <option value="kiev">Kiev</option>
+          <option value="odesa">Odesa</option>
+          <option value="Dnipro">Dnipro</option>
+        </select>
+        <textarea name="address" cols="30" rows="10" placeholder="Enter Address"></textarea>
+        <div id="lang">
+          <p>English<input type="checkbox" name="languages" value="en"></p>
+          <p>Ukrainian<input type="checkbox" name="languages" value="ua"></p>
+          <p>French<input type="checkbox" name="languages" value="fr"></p>
+          <p>German<input type="checkbox" name="languages" value="gr"></p>
+        </div>
+      </div>
+      <button id="btn" type="submit">
+        <span>
+          Reset password
+          <br>
+          Sign in
+          <br>
+          Sign up
+        </span>
+      </button>
+    </form>
     <script src="./js/data.js"></script>
-    <script src="./js/functions.js"></script>
-    <script src="./js/app.js"></script>
+    <script src="./js/sign.js"></script>
+
+  </body>
+
+  <!-- <a href="./pages/main.html" target="_self" rel="noopener noreferrer">TAP</a> -->
 </body>
+
 </html>
